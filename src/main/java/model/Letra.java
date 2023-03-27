@@ -33,7 +33,7 @@ public class Letra implements ILetra {
     public void crearT() throws InterruptedException {
         for (int fila = 0; fila < letra.length; fila++) {
             for (int columna = 0; columna < letra[0].length; columna++) {
-                if (fila < 1) letra[fila][columna] = '*';
+                if (fila == 0) letra[fila][columna] = '*';
                 else if (fila > 0 && columna == 3) letra[fila][columna] = '*';
                 else letra[fila][columna] = ' ';
                 System.out.print(letra[fila][columna]);
